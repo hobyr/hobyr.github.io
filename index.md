@@ -1,9 +1,8 @@
-I have a *blog*! 
+# 🎉 Welcome!! 🎉
 
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+📢 I have a *blog*!  
 
-![Image of fast.ai logo](images/logo.png)
+I'll use this blog to share about my journey towards becoming a Data Scientist/Machine Learning engineer. 👩‍💻
+Hopefully, what you'll read will spark some interest in you, and you'll learn a few things along the way. I'm happy that you're here!
 
-## This is a title
-
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+Feel free to read the posts below 👇🏽
