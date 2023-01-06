@@ -1,6 +1,8 @@
-# 🎉 Welcome!! 🎉
+# Homepage
 
-📢 I have a *blog*!  
+📢 Welcome to you, dear reader!
+
+🎉 I have a *blog*! 🎉
 
 I'll use this blog to share about my journey towards becoming a Data Scientist/Machine Learning engineer. 👩‍💻
 
