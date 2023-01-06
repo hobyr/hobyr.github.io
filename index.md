@@ -1,5 +1,3 @@
-# Homepage
-
 📢 Welcome to you, dear reader!
 
 🎉 I have a *blog*! 🎉
