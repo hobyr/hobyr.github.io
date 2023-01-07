@@ -1,10 +1,16 @@
 # About
 
-**Hi... everyone!** 🙋🏽 (Shamelessly inspired from [Yilong Ma's greeting](https://www.tiktok.com/@mayilong0))
+**Hi... everyone!** 🙋🏽 (Shamelessly inspired from [Elon Musk's doppelgänger Yilong Ma's greeting](https://www.tiktok.com/@mayilong0))
 
-My name's Hoby and since September 2020, I've been self-learning software development, and since spring 2022, decided to specialize into Artificial Intelligence. More specifically in Data Science and Machine Learning. 👨‍💻  
+My name's Hoby and since September 2020, I've been self-learning software development, and since spring 2022, decided to specialize into Artificial Intelligence where I'm gaining skills in Data Science and Machine Learning. 👨‍💻  
 
-On this website, I'll share detailed information about the projects I'm developing as well as my feedback on courses I've taken. [Here]() you can access my portfolio of data science/ML projects.
+## My story
+
+In university, I studied Mechanical Engineering and specialized in Mechanical Design. There I learnt about CAD and CAE, but also a tiny bit of programming in Matlab.
+
+## Why this website?
+
+Here I'll share detailed information about the projects I'm developing as well as my feedback on courses I've taken. [Here]() you can access my portfolio of data science/ML projects.
 
 From the beginning, I've been learning on Udemy. The list of courses I took/have been taking so far:
 * [Complete Python Developer in 2021: Zero to Mastery](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
