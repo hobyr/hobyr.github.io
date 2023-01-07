@@ -91,6 +91,8 @@ form_indices = 5*[0, 1, 2, 3]
 shuffle(form_indices)
 ```
 
+### Create content for exercise and answer sheets ###
+
 From these two lists `verb_indices` and `form_indices`, I can now create the exercise table. I'll
 first create an empty row, by making a list of 4 empty strings. Then in this list, I'll put the
 selected verb form in its corresponding index. So for example I'd get: `['', 'wrote', '', '']`.
@@ -136,3 +138,43 @@ def generate_tables(verbs):
 
     return data_test, data_correction, form_indices
 ```
+
+### Creating the PDF and exporting it ###
+
+To create the PDF, I used an external module named `FPDF` which is quite popular for making simple
+PDFs.
+
+Since the external module I created `irregular_verbs_create` is only for generating content, I wrote
+all the PDF related functions in the `main.py` file.
+
+Also, I wanted to create several practice sheets in one go. For example, create 100 different
+practice sheets would be great!
+
+First, I had to import the irregular verbs into a Python list:
+```python
+# Import the verbs list into a suitable array
+verbs = irregular_verbs_create.import_verbs(list_file)
+```
+
+Then, from this list, generate the content:
+```python
+# Generate the table for test/answers
+test, answers, form_indices = irregular_verbs_create.generate_tables(verbs)
+```
+
+I could then create the PDF object to draw on it. Luckily, with `FPDF` it's super easy: `pdf
+= FPDF()` and it generates what I call the master object. Before drawing, I'll have to add a page to
+the object by calling `pdf.add_page()`.
+
+Now I can draw the table row by row. I must choose a font and font size too before drawing any text.
+```python
+# Generate the PDF page containing the exercise
+pdf.set_font('Arial', size=11)
+for line in test:
+    for value in line:
+        pdf.cell(48, 12, txt=value, ln=0, border=1, align='C')
+    pdf.ln()
+```
+
+The inner loop will draw a single table row with 4 cells, one containing the clue for the verb, and
+leaving the other obviously empty.
