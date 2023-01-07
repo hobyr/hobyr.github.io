@@ -1,6 +1,6 @@
 # About
 
-**Hi... everyone!** 🙋🏽 (Shamelessly inspired from [Elon Musk's doppelgänger Yilong Ma's greeting](https://www.tiktok.com/@mayilong0))
+**Hi... everyone!** 🙋🏽 (Shamelessly copied from [Elon Musk's doppelgänger Yilong Ma's greeting](https://www.tiktok.com/@mayilong0))
 
 My name's Hoby and since September 2020, I've been self-learning software development, and since spring 2022, decided to specialize into Artificial Intelligence where I'm gaining skills in Data Science and Machine Learning. 👨‍💻  
 
