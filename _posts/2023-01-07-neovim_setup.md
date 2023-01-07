@@ -1,4 +1,4 @@
-# How I set my Neovim up for C/C++ \& Python
+# How I set my Neovim up for C/C++ and Python
 
 1. TOC
 {:toc}
