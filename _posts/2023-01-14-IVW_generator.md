@@ -24,8 +24,9 @@ The way my generator works is this:
 
 1. Import the list of irregular verbs from a CSV file into a regular Python list
 2. Select 20 verbs at random
-3. For each of these 20 verbs, select a random form (present, preterit, present perfect or meaning)
-to show on a table row
+3. For each of these 20 verbs, select one random form (present, preterit, present perfect or meaning)
+to show on a table row, hiding the other. **This is the exercise**, the student has to write the
+remaining forms correctly.
 4. Create a PDF object to draw a table from the 20 rows generator in the previous step
 5. Export the PDF object into a PDF file
 
@@ -70,13 +71,68 @@ perfect and its French meaning) of each irregular verb.
 
 ### Random selection of 20 verbs ###
 
-In the list, the verbs are in alphabetical order. However, to have an effective practice session,
-having them in a random order is much better. 
+In this list, the verbs are in alphabetical order. However, having them in a random order makes for
+a more effective practice session. 
 
-From the verb list, I'll get the index of each verb that I can then shuffle.
+First, I'll get a list of indices, each index refering to a sublist from the `verbs` list. I'll then
+shuffle and select the first 20.
 
 ```python
 indices = list(range(len(verbs)))
 shuffle(indices)
 verb_indices = indices[0:20]
+```
+
+Then I'll have to choose which form of the each verb to show on the table row. They also have to be
+chosen at random. So I'll create a list that contains 5 of each possible form, then shuffle it.
+
+```python
+form_indices = 5*[0, 1, 2, 3]
+shuffle(form_indices)
+```
+
+From these two lists `verb_indices` and `form_indices`, I can now create the exercise table. I'll
+first create an empty row, by making a list of 4 empty strings. Then in this list, I'll put the
+selected verb form in its corresponding index. So for example I'd get: `['', 'wrote', '', '']`.
+Finally, I'll append that list into a global list I call `data_test`, from which I'll get content
+when drawing the PDF file. And do this 20 times.
+
+Regarding the answer sheet, I'll just copy the unaltered list. Following the above example, I'll
+append `['write', 'wrote', 'written', 'écrire']` to the list aptly named `data_correction`.
+
+```python
+data_test = []
+data_correction = []
+for i in range(20):
+    line = 4*['']
+    line[form_indices[i]] = verbs[verb_indices[i]][form_indices[i]]
+    data_test.append(line)
+    data_correction.append(verbs[verb_indices[i]])
+```
+
+I finally combined all of this steps into a single function called `generate_tables()`:
+
+```python
+def generate_tables(verbs):
+    """Generate the answer rows with only one clue chosen at random.
+
+    :verbs: contains the array of irregular verbs and the 4 forms.
+    :returns: test and answer tables with indices of the forms.
+    """
+    indices = list(range(len(verbs)))
+    shuffle(indices)
+    verb_indices = indices[0:20]
+
+    form_indices = 5*[0, 1, 2, 3]
+    shuffle(form_indices)
+
+    data_test = []
+    data_correction = []
+    for i in range(20):
+        line = 4*['']
+        line[form_indices[i]] = verbs[verb_indices[i]][form_indices[i]]
+        data_test.append(line)
+        data_correction.append(verbs[verb_indices[i]])
+
+    return data_test, data_correction, form_indices
 ```
