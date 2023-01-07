@@ -55,6 +55,19 @@ def import_verbs(list_file):
         return verbs
 ```
 
+As a result, I get a list of lists: each sublist contains the 4 forms (present, preterit, present
+perfect and its French meaning) of each irregular verb.
+
+```bash
+[['abide', 'abode', 'abode', 'respecter/se conformer à'],
+ ['arise', 'arose', 'arisen', 'survenir'],
+ ['awake', 'awoke', 'awoken', 'se réveiller'],
+ ...,
+ ['wring', 'wrang', 'wrung', 'tordre'],
+ ['write', 'wrote', 'written', 'écrire']
+]
+```
+
 ### Random selection of 20 verbs ###
 
 In the list, the verbs are in alphabetical order. However, to have an effective practice session,
