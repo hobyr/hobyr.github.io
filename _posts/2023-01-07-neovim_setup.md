@@ -3,12 +3,14 @@
 1. TOC
 {:toc}
 
-Running almost always in Ubuntu, I wanted to get familiar with the terminal and its tools. One of
-these tools are text editors, and I read countless pieces about Vim being better than Emacs and
-vice-versa.
+---
+
+Running almost always in Ubuntu, I wanted to get familiar with the
+terminal and its tools. One of these tools are text editors, and I read
+countless pieces about Vim being better than Emacs and vice-versa.
 
 I've been running with Vim for almost 2 years now and I find it a superb text editor. After finding
-out about Neovim, a supposedly improvement over Vim, I wanted to give it a try.
+out about Neovim, supposedly an improvement over Vim, I wanted to give it a try.
 
 Although it took me several months and plugins to find a suitable Vim configuration, I feared moving
 to Neovim would be a headache but not at all! The transition to Neovim was almost seamless.
@@ -21,6 +23,16 @@ using. I'll have two `tmux` panes side-by-side, one with Bash, and the other wit
 
 Since I do a lot of work in the terminal too, like compiling, listing or creating files/directories,
 that combo is a no-brainer.
+
+In this post, I'll show you a way to customize Neovim to make your coding life easier, and also make it look great so you can show off!
+
+We'll be going from this:
+
+![](/images/2023-01-07-neovim_setup_assets/before_look.png)
+
+to this:
+
+![](/images/2023-01-07-neovim_setup_assets/final_look.png)
 
 ## My configuration
 
@@ -205,8 +217,13 @@ I added `Plug 'dense-analysis/ale` to my `.vimrc` for that.
 
 ## Conclusion
 
-By now, I have a pretty functional Vim/Neovim code editor that is light and fast. I do have other plugins installed, but the ones I wrote about today make the foundation of my Vim/Neovim setup.
+In this post, we've learned how to:
 
-I've been running with that specific setup for a couple of months and it really suits my needs.
+- Add and modify the `.vimrc` to customize our Vim/Neovim editor.
+- Enable the basic features that make up a code editor such as line numbering and syntax coloring.
+- Add plugins to further enhance the abilities of Vim/NeoVim.
+- Add tools to make coding easier with snippets and a LSP.
 
-I can still extend Vim/Neovim in the future if needed so that's why I think it's a great editor.
+By now, you should have a pretty functional Vim/Neovim code editor that is light and fast. While I do have other plugins installed, the ones I showed you today make the foundation of my Vim/Neovim setup.
+
+I've been running with that specific setup for a couple of months and it really suits my needs. I can still extend Vim/Neovim in the future if needed so that's why I think it's a great editor.
