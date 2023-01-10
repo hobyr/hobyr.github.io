@@ -5,26 +5,17 @@
 
 ---
 
-Running almost always in Ubuntu, I wanted to get familiar with the
-terminal and its tools. One of these tools are text editors, and I read
-countless pieces about Vim being better than Emacs and vice-versa.
+Running almost always in Ubuntu, I wanted to get familiar with the terminal and its tools. I found
+out about terminal text editors and read great stories about Vim and its fork Neovim. And how it
+can be made into a great code editor.
 
-I've been running with Vim for almost 2 years now and I find it a superb text editor. After finding
-out about Neovim, supposedly an improvement over Vim, I wanted to give it a try.
+I started with Vim in late 2020, and from 2022 I chose to move to Neovim.
 
-Although it took me several months and plugins to find a suitable Vim configuration, I feared moving
-to Neovim would be a headache but not at all! The transition to Neovim was almost seamless.
+From the start, I spent months to configure Vim to my liking, and when I moved to Neovim, it was
+surprisingly easier than expected to transfer my configuration.
 
-One of the reasons I like working in the terminal, is that I have direct access to the shell by
-hitting `Ctrl-Z` (and running `fg` from shell to return to the editor), instead of switching apps.
-
-Even better, I can use it in `tmux` too, a great built-in terminal multiplexer which I'm currently
-using. I'll have two `tmux` panes side-by-side, one with Bash, and the other with Neovim.
-
-Since I do a lot of work in the terminal too, like compiling, listing or creating files/directories,
-that combo is a no-brainer.
-
-In this post, I'll show you a way to customize Neovim to make your coding life easier, and also make it look great so you can show off!
+Therefore in this post, I'll show you a way to customize Neovim (not Vim) in Linux to make your
+coding life easier, and also make it look great so you can show off to your friends!
 
 We'll be going from this:
 
@@ -34,57 +25,94 @@ to this:
 
 ![](/images/2023-01-07-neovim_setup_assets/final_look.png)
 
-## My configuration
 
-Vim/Neovim is just a text editor, and in its raw form, it's not particularly suitable for programming, so there's a little bit of configuring to do. 
+## How to configure Vim/Neovim ##
 
-### How to configure Vim/Neovim ##
+_Remember! All of these commands are for a Linux system. And I'll focus on Neovim._
 
-Configuring Vim is done by modifying the `.vimrc` file in the `$HOME` folder. Neovim uses a different file, `$HOME/.config/nvim/init.vim` but there's no need to copy and paste the contents from one file to another. 
+Configuring Vim is done by modifying the `.vimrc` file in the `$HOME` folder. Neovim uses
+a different file, `$HOME/.config/nvim/init.vim`.
 
-A few simple commands will tell Neovim to look in the former for its configuration.
-
-By adding the following code to the `init.vim` file:
+Adding the following code to the `init.vim` file:
 
 ```
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 ```
+will copy your Vim configuration Neovim. So, you'll only have to modify the `.vimrc` to configure
+both Vim and Neovim. 
 
-modifying the `.vimrc` will configure both Vim and Neovim. 
+To start extending the functionality of Vim/Neovim, there are:
+- Built-in commands
+- Third-party plugins, most of them open-source from GitHub.
 
-To start extending the functionality of Vim/Neovim, I can use built-in commands, but to really make this editor my own, using plugins is the way to go.
+### Built-in commands ###
 
-First, I'll go over the basic commands to start improving Vim/Neovim, then I'll list some plugins I use daily to make my life easier when writing code.
+Let's open the `.vimrc` by typing in the terminal:
 
-### Basic configuration commands ##
+```Bash
+nvim ~/.vimrc
+```
 
-#### Line numbering ###
+then add the following lines:
 
-When using an IDE or a text editor aimed at software developers, one of the first features is _line numbering_.
+```
+set number
+set cursorline
+syntax on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+```
 
-When first starting Vim/Neovim and a blank `.vimrc`, this feature is _inactive_. To activate, add `set number` to `.vimrc`.
+_If you don't know how to use Vim/Neovim, check out my article on [how to start using Neovim]()_.
+
+Let me explain what each of these lines does.
+
+#### Line numbering ####
+
+When using an IDE or a code editor, one of the features you'll notice is _line numbering_.
+
+When first starting a vanilla Neovim (a blank `.vimrc`), this feature is _inactive_.
+
+`set number` activates this feature, and once you restart Neovim, you'll see a column on the left
+filled with numbers.
+
+<!-- IMPORT PHOTO BEFORE/AFTER LINE NUMBERING --!>
 
 #### Current line highlighting ###
 
-Some editors such as Visual Studio Code offer that feature, and though it's subtle, it's really helpful to see where your cursor is when you have many lines of code in front of you.
+Code editors usually offer that feature, and though it's subtle, it's really helpful to see where
+your cursor is when you have many lines of code in front of you.
 
-Vim/Neovim also have that feature _inactive_ at first. To activate, I added `set cursorline` to `.vimrc`.
+Just like line numbering, it's an inactive feature for vanilla versions. 
+
+`set cursorline` switches it on and becomes active after restart.
+
+<!-- IMPORT PHOTO BEFORE/AFTER LINE HIGHLIGHTING --!>
 
 #### Basic syntax highlighting ###
 
-Syntax highlighting is so much helpful when writing code, it helps identify keywords, variables and functions names, etc. It's also a basic feature of any code editor and IDE.
+Syntax highlighting is really helpful for coding, you'll have an easier time identifying keywords,
+variables and functions names, etc. It's also a basic feature of any code editor.
 
-A hidden feature like the previous two, activating syntax highlighting in Vim/Neovim is very simple: add `syntax on` to the `.vimrc`.
+Again, inactive in vanilla versions, `syntax on` will make your code more colorful.
 
-I find the native syntax highlighting feature quite lacking and I found a great plugin to enhance it. I'll write more about it later.
+<!-- IMPORT PHOTO BEFORE/AFTER SYNTAX HIGHLIGHTING --!>
+
+However I find the native syntax highlighting quite lacking and I found a great plugin to enhance
+it. More about it later.
 
 #### Indentation settings ###
 
-When writing code, we very often, if not always, use indentation to improve readability. Indentation is defined by _tab stops_. Depending on standards, a tab stop can be equivalent to 2 or 4 spaces.
+When writing code, we almost always use indentation to improve readability. Indentation is commonly
+defined by _tab stops_. Depending on standards, a tab stop can be equivalent to 2 or 4 spaces.
 
-A common value is 4 spaces, and we can configure this behavior in Vim/Neovim. To set indentation settings to 4 in Vim/Neovim, I added the following to `.vimrc`:
+_Python heavily relies on indentation, for functionality first, then readability._
+
+A common value is 4 spaces, and we can configure this behavior in Neovim. That's what those three
+lines do:
 
 ```
 set tabstop=4
@@ -92,9 +120,12 @@ set shiftwidth=4
 set expandtab
 ```
 
-So while writing code, let's say C/C++, opening a new block will automatically indent the code by 4 spaces relative to the parent block.
+So while writing code, let's say C/C++, opening a new block will automatically indent the code by
+4 spaces relative to the parent block.
 
-#### The configuration up to now ###
+And of course, a restart will activate this functionality.
+
+**By now...**
 
 The `.vimrc` should look like this now:
 
@@ -107,9 +138,10 @@ set shiftwidth=4
 set expandtab
 ```
 
-Once I saved the `.vimrc` and restarted Vim/Neovim, I felt it was closer to a code editor rather than a simple text editor.
+and Neovim should feel more like a code editor rather than a simple text editor.
 
-###  Plugins for Vim/Neovim
+
+###  Open-source 3rd-party plugins
 
 Plugins heavily extend the functionality of Vim/Neovim, and I could make it like an IDE if I wanted. I still want Vim/Neovim to be fast and have just the features I need, not more.
 
@@ -145,7 +177,9 @@ call plug#end()
 
 To install the plugins, I have to run `:PlugInstall`.
 
-#### Colorscheme and syntax highlighting
+#### Colorscheme ####
+
+#### Enhanced syntax highlighting ####
 
 I admit I spent a lot of time deciding between colorschemes, it's an endless quest for the seemingly perfect one. There's none, but I found mine.
 
