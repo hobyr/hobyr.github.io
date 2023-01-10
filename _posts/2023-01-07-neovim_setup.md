@@ -79,7 +79,7 @@ When first starting a vanilla Neovim (a blank `.vimrc`), this feature is _inacti
 `set number` activates this feature, and once you restart Neovim, you'll see a column on the left
 filled with numbers.
 
-<!-- IMPORT PHOTO BEFORE/AFTER LINE NUMBERING --!>
+<!--IMPORT PHOTO BEFORE/AFTER LINE NUMBERING-->
 
 #### Current line highlighting ####
 
