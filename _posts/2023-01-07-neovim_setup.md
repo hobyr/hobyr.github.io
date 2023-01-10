@@ -81,7 +81,7 @@ filled with numbers.
 
 <!-- IMPORT PHOTO BEFORE/AFTER LINE NUMBERING --!>
 
-#### Current line highlighting ###
+#### Current line highlighting ####
 
 Code editors usually offer that feature, and though it's subtle, it's really helpful to see where
 your cursor is when you have many lines of code in front of you.
@@ -92,7 +92,7 @@ Just like line numbering, it's an inactive feature for vanilla versions.
 
 <!-- IMPORT PHOTO BEFORE/AFTER LINE HIGHLIGHTING --!>
 
-#### Basic syntax highlighting ###
+#### Basic syntax highlighting ####
 
 Syntax highlighting is really helpful for coding, you'll have an easier time identifying keywords,
 variables and functions names, etc. It's also a basic feature of any code editor.
@@ -104,7 +104,7 @@ Again, inactive in vanilla versions, `syntax on` will make your code more colorf
 However I find the native syntax highlighting quite lacking and I found a great plugin to enhance
 it. More about it later.
 
-#### Indentation settings ###
+#### Indentation settings ####
 
 When writing code, we almost always use indentation to improve readability. Indentation is commonly
 defined by _tab stops_. Depending on standards, a tab stop can be equivalent to 2 or 4 spaces.
@@ -141,7 +141,7 @@ set expandtab
 and Neovim should feel more like a code editor rather than a simple text editor.
 
 
-###  Open-source 3rd-party plugins
+### Open-source 3rd-party plugins ###
 
 Plugins heavily extend the functionality of Vim/Neovim, and I could make it like an IDE if I wanted. I still want Vim/Neovim to be fast and have just the features I need, not more.
 
@@ -149,7 +149,7 @@ Almost every plugin I used with Vim is compatible with Neovim, except for the co
 
 I write mainly in C/C++ and some Python, so finding plugins suitable for these languages was necessary, and upon retrospect quite easy.
 
-#### How to properly add plugins to Vim/Neovim ###
+#### How to properly add plugins to Vim/Neovim ####
 
 First of all, at the top of the `.vimrc`, I have to add 3 commands:
 
@@ -198,7 +198,7 @@ call plug#end()
 
 To activate Tokyonight, I'll add `colorscheme tokyonight` to my `.vimrc`.
 
-#### A little more on appearance ###
+#### A little more on appearance ####
 
 By browsing Reddit, I found really good-looking Vim/Neovim setups and I wanted to improve upon an already good setup.
 
