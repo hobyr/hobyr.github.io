@@ -90,7 +90,7 @@ Just like line numbering, it's an inactive feature for vanilla versions.
 
 `set cursorline` switches it on and becomes active after restart.
 
-<!-- IMPORT PHOTO BEFORE/AFTER LINE HIGHLIGHTING --!>
+<!-- IMPORT PHOTO BEFORE/AFTER LINE HIGHLIGHTING -->
 
 #### Basic syntax highlighting ####
 
@@ -99,7 +99,7 @@ variables and functions names, etc. It's also a basic feature of any code editor
 
 Again, inactive in vanilla versions, `syntax on` will make your code more colorful.
 
-<!-- IMPORT PHOTO BEFORE/AFTER SYNTAX HIGHLIGHTING --!>
+<!-- IMPORT PHOTO BEFORE/AFTER SYNTAX HIGHLIGHTING -->
 
 However I find the native syntax highlighting quite lacking and I found a great plugin to enhance
 it. More about it later.
