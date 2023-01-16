@@ -1,6 +1,7 @@
-# How I made practice sheets for English irregular verbs #
+# How I made practice sheets for English irregular verbs
 
-1. TOC {:toc}
+1. TOC
+{:toc}
 
 In autumn 2020, I just started working as an English and Math home tutor. Although I had some
 materials provided by my company, I had to find other materials on the web.
@@ -12,7 +13,7 @@ never enough.
 So I set out to make my own, using Python, because making them by hand on Word would've taken too
 long. I created a _generator_ of practice sheets.
 
-## How does my generator work? ##
+## How does my generator work?
 
 As I didn't want to have a complicated piece of software with a GUI, I chose to stay with the
 command-line. It's just quicker.
@@ -35,7 +36,7 @@ I chose to create a separate module from the `main.py` file, it makes for a tidi
 
 In the `main.py`, the code takes all the content and formats it into a nice PDF file.
 
-### The list of irregular verbs ###
+### The list of irregular verbs
 
 First of all, I had to gather the list of common irregular verbs my students were learning.
 Conveniently, I found a CSV file containing all of them, alongside their French meaning.
@@ -69,7 +70,7 @@ perfect and its French meaning) of each irregular verb.
 ]
 ```
 
-### Random selection of 20 verbs ###
+### Random selection of 20 verbs
 
 In this list, the verbs are in alphabetical order. However, having them in a random order makes for
 a more effective practice session. 
@@ -91,7 +92,7 @@ form_indices = 5*[0, 1, 2, 3]
 shuffle(form_indices)
 ```
 
-### Create content for exercise and answer sheets ###
+### Create content for exercise and answer sheets
 
 From these two lists `verb_indices` and `form_indices`, I can now create the exercise table. I'll
 first create an empty row, by making a list of 4 empty strings. Then in this list, I'll put the
@@ -139,7 +140,7 @@ def generate_tables(verbs):
     return data_test, data_correction, form_indices
 ```
 
-### Creating the PDF and exporting it ###
+### Creating the PDF and exporting it
 
 **Exercise sheet**
 
