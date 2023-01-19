@@ -58,17 +58,19 @@ From this matrix, we can derive other important metrics:
 
 Accuracy determines the overall performance of the model, which is out of
 all the predictions that it made, how many were correct? It can be summed
-up into this equation: Accuracy = $$\frac{TP+TN}{TP+FP+TN+FN}$$.
+up into this equation: $$Accuracy = \frac{TP+TN}{TP+FP+TN+FN}$$
 
 **Precision**
 
 Precision can be thought of this way: out of all positive predictions, how
-many were correct? And its related equation is: $$Precision = \frac{TP}{TP+FP}$$.
+many were correct? And its related equation is: $$Precision = \frac{TP}{TP+FP}$$
 
 **Recall**
 
 Recall can be thought of this way: out of all positive labels, how many
-were correctly predicted? Its related equation is: $$Recall = \frac{TP}{TP+FN}$$.
+were correctly predicted? Its related equation is: $$Recall = \frac{TP}{TP+FN}$$
 
 The remaining challenge relies in the evaluation criterion, which of these
 metrics should you favor?
+
+It greatly depends on your project's success criterion.
