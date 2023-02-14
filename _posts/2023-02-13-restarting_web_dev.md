@@ -113,8 +113,8 @@ the chances of succeeding and pushing through the hard times. I know a friend of
 approximately 2 years before successfully switching from English teaching in Japan to being a
 Software Developer.
 
-Some resources advised to take a course on **[Learning How to
-Learn]**(https://www.coursera.org/learn/learning-how-to-learn), and I've been learning some
+Some resources advised to take a course on [**Learning How to
+Learn**](https://www.coursera.org/learn/learning-how-to-learn), and I've been learning some
 fascinating facts about the brain on learning and how to overcome certain hurdles during learning.
 
 Finally, through these three resources, there are large communities that are always happy to help
