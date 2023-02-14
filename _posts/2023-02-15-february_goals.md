@@ -34,3 +34,23 @@ because I have more space. Here they are for the February:
     Flexbox project from FreeCodeCamp.
 - **Week 4 (02.20 to 02.26)**: Finish sections 11 & 12 of Colt Steele's Udemy bootcamp + start
     section 13.
+
+
+### Week 1 (01.30 to 02.05)
+
+I managed to complete all the goals for this week including the CSS Colors and the HTML forms
+projects from FreeCodeCamp.
+
+Secondly, on The Odin Project, aka TOP, I completed the _Working with text_ lesson in the _HTML
+Foundations_ section. Quite easy for me as I've been also watching the Udemy bootcamp that dealt
+with that topic as well.
+
+Quite proud of the achievement, progressing little by little each day. I still find it hard to
+adjust to this rhythm as I'm used to doing so much in the day. Binging on the bootcamp videos, and
+trying to squeeze as much as possible. This feels more sustainable.
+
+When I wasn't actively working on learning Web Development, I wanted to spend some time learning
+[Django](https://www.djangoproject.com/), the Python framework to develop web apps. I managed to go
+until tutorial 3. It's very different from static HTML/CSS, but eventually, I believe I'll have to
+work with framework such as React.js or Vue.js for Front-End, and then Back-End frameworks like
+Django, ExpressJS, Spring Boot or Ruby on Rails. It's a good introduction.
