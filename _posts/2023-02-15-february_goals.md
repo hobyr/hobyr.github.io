@@ -1,8 +1,6 @@
-# Goals for February 2023 [Web Dev Learning Journey]
+# Goals for February 2023 [Web Dev Learning Journey] + Week 3 log
 
-In my previous post, I described my strategy to ideally become a Full-Stack Web Developer by August
-2023. Nonetheless, getting a chance to work as a Front-End or Back-End engineer at first is
-something I'd be happy with, as a stepping stone.
+When I [wrote about learning Web Development again](https://hobyr.github.io/2023/02/13/restarting_web_dev.html), I described my strategy to ideally become a Full-Stack Web Developer by August 2023. Nonetheless, getting a chance to work as a Front-End or Back-End engineer at first is something I'd be happy with, as a stepping stone.
 
 I managed to complete all my goals for January 2023, and I'd like to share in this post more details
 about my strategy for February.
@@ -11,11 +9,11 @@ about my strategy for February.
 
 As a reminder, here are my goals for this month:
 
-1. [ ] **Finish CSS Foundations section on The Odin Project**: I'd be able to design pages and content,
+1. [ ]  **Finish CSS Foundations section on The Odin Project**: I'd be able to design pages and content,
    ideally make my resume look good online.
-2. [ ] **Finish the Tribute Page project on FreeCodeCamp**: I'll have another project to show on my
+2. [ ]  **Finish the Tribute Page project on FreeCodeCamp**: I'll have another project to show on my
     GitHub, with a larger tech stack hopefully.
-3. [ ] **Complete the CSS sections on Colt Steele's Udemy bootcamp**: A second resource to cement my
+3. [ ]  **Complete the CSS sections on Colt Steele's Udemy bootcamp**: A second resource to cement my
     CSS knowledge, as well as learning about Flexbox and Bootstrap.
 
 Monthly goals are great, but I believe weekly goals are better to make sure I stay on track and
@@ -27,42 +25,30 @@ These are goals I write in my notebook, and I even have daily goals, or simply d
 lot of emphasis on Colt Steele's course on my notebook. However, I'll add other resources here
 because I have more space. Here they are for the February:
 
-- **Week 1 (01.30 to 02.05)**: Finish sections 5 & 6 of Colt Steele's Udemy bootcamp.
-- **Week 2 (02.06 to 02.12)**: Finish sections 7 & 8 of Colt Steele's Udemy bootcamp + finish Survey
+- **Week 2 (01.30 to 02.05)**: Finish sections 5 & 6 of Colt Steele's Udemy bootcamp.
+- **Week 3 (02.06 to 02.12)**: Finish sections 7 & 8 of Colt Steele's Udemy bootcamp + finish Survey
     Form project from FreeCodeCamp.
-- **Week 3 (02.13 to 02.19)**: Finish sections 9 & 10 of Colt Steele's Udemy bootcamp + get to
+- **Week 4 (02.13 to 02.19)**: Finish sections 9 & 10 of Colt Steele's Udemy bootcamp + get to
     Flexbox project from FreeCodeCamp.
-- **Week 4 (02.20 to 02.26)**: Finish sections 11 & 12 of Colt Steele's Udemy bootcamp + start
+- **Week 5 (02.20 to 02.26)**: Finish sections 11 & 12 of Colt Steele's Udemy bootcamp + start
     section 13.
 
+Although in the previous post, I wrote about my weekly progress since I started, I want to make it a
+regular occurence. I can reflect on what I did, as well as prove to myself I'm progressing.
+Frequently, I may be so deep in my learning that I'd forget stepping back and get an overview of
+what I accomplished until now.
 
-### Week 1 (01.30 to 02.05)
+Since I described the first two weeks of my learning before, and we're midway through the 3rd week
+of February which is actually my fourth week of learning, I'll share what I did during week 3.
 
-I managed to complete all the goals for this week including the CSS Colors and the HTML forms
-projects from FreeCodeCamp.
-
-Secondly, on The Odin Project, aka TOP, I completed the _Working with text_ lesson in the _HTML
-Foundations_ section. Quite easy for me as I've been also watching the Udemy bootcamp that dealt
-with that topic as well.
-
-Quite proud of the achievement, progressing little by little each day. I still find it hard to
-adjust to this rhythm as I'm used to doing so much in the day. Binging on the bootcamp videos, and
-trying to squeeze as much as possible. This feels more sustainable.
-
-When I wasn't actively working on learning Web Development, I wanted to spend some time learning
-[Django](https://www.djangoproject.com/), the Python framework to develop web apps. I managed to go
-until tutorial 3. It's very different from static HTML/CSS, but eventually, I believe I'll have to
-work with framework such as React.js or Vue.js for Front-End, and then Back-End frameworks like
-Django, ExpressJS, Spring Boot or Ruby on Rails. It's a good introduction.
-
-### Week 2 (02.06 to 02.12)
+### Week 3 (02.06 to 02.12)
 
 This week was a bit hectic as I spent a lot of time away from my computer doing more creative work.
 I still managed to complete some sections as I planned.
 
 I gave myself several days to complete the Survey Form project on FreeCodeCamp, but I surprised
 myself by completing it in less than an hour. You can check [my project
-here](https://hobyr.github.io/survey_form/). It's not functional so submitting will result in a _405
+here](https://www.github.com/hobyr/survey_form). It's not functional so submitting will result in a _405
 error_. I need to make a page so it looks better. The goal was to use HTML and CSS to make an
 elegant page. And I believe I managed quite well, I really copied FreeCodeCamp's aesthetics though.
 
@@ -73,10 +59,35 @@ too much on my daily plate.
 I haven't done much Django this week, but I'm getting close to more complex CSS topics on all three
 resources so that's pretty good.
 
-### Week 3 (02.13 to 02.19)
+#### Finding Git a little easier
 
-Come back later when I finish this week!
+Most of the resources but TOP encourage the use of Git and GitHub for project management and version
+control. That's one reason I really enjoy learning through TOP.
 
-### Week 4 (02.20 to 02.26)
+In the past, I tried using Git locally and GitHub. Reading about it makes me feel like knowing how
+to use it is essential as a developer. So every "substantial" project I complete, on whichever
+platform, I upload it to my GitHub through the terminal.
 
-Come back later when I finish this week!
+I'm getting the hang of it, but I know it's much more complex than what I'm currently doing. Since
+I'm the sole developer right now, I'm not dealing with _pull requests_, _branch management_, etc. So
+I'm still at the basics, but that seems like enough for now.
+
+Right now, `git pull`, `git log`, `git diff`, `git status`, `git commit`, `git push`, `git add`,
+`git restore` are commands I'm familiar with. Also, using `gh repo clone` or `gh repo create` is
+something I'm slowly getting used to. When creating a remote repository, I still have to look at the
+repository creation page on GitHub. **It's only a matter of time until it becomes second nature**.
+
+#### HTML and CSS are quite fun but I want to get to JavaScript
+
+I'm already familiar with HTML and CSS, so I do find some of the classes boring. In particular,
+since I'm pacing myself, I do find my progress slow, but it's a marathon, not a sprint.
+
+I'm eager to get to the JavaScript sections and doing more interactive stuff. This is one reason I
+started looking at Django. Not only it's a widely used framework, there's some programming involved.
+I can't wait until I get to Front-End frameworks like React or Vue, I've seen these names way too
+often.
+
+<hr>
+
+I think I've made quite good progress this week despite postponing many of the tasks. I can keep
+going. If my story has inspired you so far, please leave a comment below. See you in the next post.
