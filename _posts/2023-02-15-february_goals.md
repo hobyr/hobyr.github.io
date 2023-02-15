@@ -54,3 +54,29 @@ When I wasn't actively working on learning Web Development, I wanted to spend so
 until tutorial 3. It's very different from static HTML/CSS, but eventually, I believe I'll have to
 work with framework such as React.js or Vue.js for Front-End, and then Back-End frameworks like
 Django, ExpressJS, Spring Boot or Ruby on Rails. It's a good introduction.
+
+### Week 2 (02.06 to 02.12)
+
+This week was a bit hectic as I spent a lot of time away from my computer doing more creative work.
+I still managed to complete some sections as I planned.
+
+I gave myself several days to complete the Survey Form project on FreeCodeCamp, but I surprised
+myself by completing it in less than an hour. You can check [my project
+here](https://hobyr.github.io/survey_form/). It's not functional so submitting will result in a _405
+error_. I need to make a page so it looks better. The goal was to use HTML and CSS to make an
+elegant page. And I believe I managed quite well, I really copied FreeCodeCamp's aesthetics though.
+
+And while I postponed many daily tasks, by catching up, I managed to complete section 7 on time, but
+it took 2 more days to finish section 8. Again, not trying to overwhelm myself, I decided to not put
+too much on my daily plate.
+
+I haven't done much Django this week, but I'm getting close to more complex CSS topics on all three
+resources so that's pretty good.
+
+### Week 3 (02.13 to 02.19)
+
+Come back later when I finish this week!
+
+### Week 4 (02.20 to 02.26)
+
+Come back later when I finish this week!
