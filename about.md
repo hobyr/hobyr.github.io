@@ -61,12 +61,12 @@ I've most learned on Udemy, but as I strongly believe in diversity in learning, 
 from other trusted sources too. The list of courses I took/have been taking so far:
 
 **Programming languages** to learn the syntax and possible applications:
-* :heavy-check-mark: [Complete Python Developer in 2021: Zero to Mastery](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
-* :heavy-check-mark: [C Programming for Beginners - Master the C Language](https://www.udemy.com/course/c-programming-for-beginners-/)
-* :heavy-check-mark: [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/)
+* :heavy_check_mark: [Complete Python Developer in 2021: Zero to Mastery](https://www.udemy.com/course/complete-python-developer-zero-to-mastery/)
+* :heavy_check_mark: [C Programming for Beginners - Master the C Language](https://www.udemy.com/course/c-programming-for-beginners-/)
+* :heavy_check_mark: [Beginning C++ Programming - From Beginner to Beyond](https://www.udemy.com/course/beginning-c-plus-plus-programming/)
 
 **Computer science fundamentals**:
-* :heavy-check-mark: [Complexity Theory - Running Time Analysis of Algorithms](https://www.udemy.com/course/complexity-theory-basics/)
+* :heavy_check_mark: [Complexity Theory - Running Time Analysis of Algorithms](https://www.udemy.com/course/complexity-theory-basics/)
 * [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 * [Algorithms and Data Structures in Python](https://www.udemy.com/course/algorithms-and-data-structures-in-python/)
 * [Mastering Data Structures & Algorithms using C and
