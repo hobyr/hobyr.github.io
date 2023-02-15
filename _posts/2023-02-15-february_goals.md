@@ -9,11 +9,11 @@ about my strategy for February.
 
 As a reminder, here are my goals for this month:
 
-1. [ ]  **Finish CSS Foundations section on The Odin Project**: I'd be able to design pages and content,
+1. ☑️ **Finish CSS Foundations section on The Odin Project**: I'd be able to design pages and content,
    ideally make my resume look good online.
-2. [ ]  **Finish the Tribute Page project on FreeCodeCamp**: I'll have another project to show on my
+2. **Finish the Tribute Page project on FreeCodeCamp**: I'll have another project to show on my
     GitHub, with a larger tech stack hopefully.
-3. [ ]  **Complete the CSS sections on Colt Steele's Udemy bootcamp**: A second resource to cement my
+3. **Complete the CSS sections on Colt Steele's Udemy bootcamp**: A second resource to cement my
     CSS knowledge, as well as learning about Flexbox and Bootstrap.
 
 Monthly goals are great, but I believe weekly goals are better to make sure I stay on track and
