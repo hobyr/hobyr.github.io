@@ -1,4 +1,4 @@
-# Goals for February 2023 [Web Dev Learning Journey] + Week 3 log
+# Goals for February 2023 + Week 3 log
 
 When I [wrote about learning Web Development again](https://hobyr.github.io/2023/02/13/restarting_web_dev.html), I described my strategy to ideally become a Full-Stack Web Developer by August 2023. Nonetheless, getting a chance to work as a Front-End or Back-End engineer at first is something I'd be happy with, as a stepping stone.
 
